@@ -22,6 +22,7 @@ Gungi is a fictional board game from the manga *Hunter x Hunter*, known for its 
 | **Rule Completeness / 規則完整度** | ✅ First to fully implement the official 2022 Gungi rules / 全球第一個完整實作 2022 官方正版規則 |
 | **Technical Architecture / 技術架構** | ✅ First to use NNUE neural network evaluation for Gungi / 全球第一個使用 NNUE 神經網路評估 |
 | **Open Source Pioneer / 開源先驅** | ✅ First open-source Gungi AI engine / 全球第一個開源的軍儀棋 AI 引擎 |
+| **Playing Strength / 棋力強度** | ✅ Currently the strongest Gungi AI in the world (no other public engine to compare) / 目前全球最強（無其他公開引擎可比較） |
 
 ---
 
