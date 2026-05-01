@@ -1,0 +1,21 @@
+CXX = g++
+CXXFLAGS = -O3 -std=c++17 -Wall -Wextra
+TARGET = komugi
+SOURCES = main.cpp
+
+# NNUE 支援（需要 ONNX Runtime）
+# 若無 ONNX Runtime，請手動註解 komugi_engine_v4_6.h 中的 #define NNUE_ENABLED
+NNUE_FLAG = -DNNUE_ENABLED
+NNUE_LIB = -lonnxruntime
+
+all:
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCES)
+
+# 啟用 NNUE 的版本（需安裝 ONNX Runtime）
+nnue:
+	$(CXX) $(CXXFLAGS) $(NNUE_FLAG) -o $(TARGET)-nnue $(SOURCES) $(NNUE_LIB)
+
+clean:
+	rm -f $(TARGET) $(TARGET)-nnue
+
+.PHONY: all clean nnue

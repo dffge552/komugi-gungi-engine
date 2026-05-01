@@ -1,0 +1,29 @@
+# 編譯產物
+komugi
+komugi-nnue
+komugi.exe
+komugi-nnue.exe
+*.o
+*.obj
+*.exe
+
+# NNUE 模型（大型檔案，選用上傳）
+*.onnx
+*.pt
+*.bin
+
+# 編輯器檔案
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# 作業系統
+.DS_Store
+Thumbs.db
+
+# 暫存檔
+*.tmp
+*.log
